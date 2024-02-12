@@ -2,16 +2,14 @@ import numpy as np
 
 class Board:
     size = (0, 0)
-    piece_locations = np.empty((0, 0), dtype=str)
     
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
         
         return
     
-    def initial_setup(self):
+    def initial_setup(self) -> None:
         self.size = (8, 8)
-        self.piece_locations = np.empty(self.size, dtype=str)
         
 if __name__ == "__main__":
     board = Board()
