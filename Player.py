@@ -25,9 +25,9 @@ class Player:
                 self.kings)
     
     def points(self) -> int:
-        return ((self.pawns * Pawn.value) +
-                (self.knights * Knight.value) + 
-                (self.bishops * Bishop.value) +
-                (self.rooks * Rook.value) +
-                (self.queens * Queen.value) +
-                (self.kings) * King.value)
+        return ((self.pawns * Pawn.points) +
+                (self.knights * Knight.points) + 
+                (self.bishops * Bishop.points) +
+                (self.rooks * Rook.points) +
+                (self.queens * Queen.points) +
+                (self.kings) * King.points)
